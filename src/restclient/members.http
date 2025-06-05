@@ -1,0 +1,35 @@
+### Create a member
+POST http://localhost:3000/members
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "email": "jane@example.com",
+  "joinedDate": "2025-06-04"
+}
+
+###
+
+### Get all members
+GET http://localhost:3000/members
+
+###
+
+### Get a member by ID
+GET http://localhost:3000/members/1
+
+###
+
+### Update a member
+PATCH http://localhost:3000/members/1
+Content-Type: application/json
+
+{
+  "name": "Jane D. Updated",
+  "joinedDate": "2025-06-05"
+}
+
+###
+
+### Delete a member
+DELETE http://localhost:3000/members/1

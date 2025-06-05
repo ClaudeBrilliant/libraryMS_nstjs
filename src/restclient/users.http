@@ -1,0 +1,30 @@
+@baseUrl = http://localhost:3000
+
+### CREATE A NEW USER
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+    "name": "Lost Souls",
+    "author": "Claude Brilliant",
+    "publishedYear": "2021"
+}
+
+
+###GET ALL BOOKS
+
+GET {{baseUrl}}/books
+
+###GET ALL AVAILABLE BOOKS
+GET {{baseUrl}}/books?available=true
+
+###Get book by name
+GET {{baseUrl}}/books/name/clyde
+
+###update user data
+PATCH {{baseUrl}}/users/3
+Content-Type: application/json,
+
+{
+    "author" : "Jean"
+}

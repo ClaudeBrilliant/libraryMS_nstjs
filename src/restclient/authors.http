@@ -1,0 +1,34 @@
+### Create a new author
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+  "name": "Chinua Achebe",
+  "age": 45,
+  "country": "Nigeria"
+}
+
+###
+
+### Get all authors
+GET http://localhost:3000/authors
+
+###
+
+### Get author by ID
+GET http://localhost:3000/authors/1
+
+###
+
+### Update author
+PATCH http://localhost:3000/authors/1
+Content-Type: application/json
+
+{
+  "age": 46
+}
+
+###
+
+### Delete author
+DELETE http://localhost:3000/authors/1
